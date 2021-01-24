@@ -1,13 +1,19 @@
 {
   "name": "web-crawler",
   "version": "1.0.0",
-  "main": "crawler.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/crawler.js"
+    "dev": "nodemon",
+    "prod": "node -r src/index.js"
   },
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.5"
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.5",
+    "commander": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
